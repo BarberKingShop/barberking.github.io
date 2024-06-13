@@ -7,30 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Bebas+Neue&family=Caveat:wght@400..700&family=DM+Serif+Display:ital@0;1&family=Jersey+10+Charted&family=Madimi+One&family=Poppins:wght@700&family=Quicksand:wght@300..700&family=Sixtyfour&family=Space+Grotesk:wght@300..700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
-    <script src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <style>
-        *{
-            font-family: "Ubuntu", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-           
-        }#map { 
-            height: 70vw;
-            width:70vw; 
-            
-            border-radius: 10px;
-            border: 1px solid white;
-            box-shadow: 0px 0px 15px 0px #F2BE5C;
-            margin:1.5rem 0 ;
-        }.leaflet-routing-container{
-            display:none;
-        }.leaflet-control-zoom a, .leaflet-popup-content-wrapper, .leaflet-popup-tip{
-            color:#F2BE5C !important;
-            background-color: rgb(22, 22, 22) !important;
-            font-family: 'Marcellus', serif !important;
+   'Marcellus', serif !important;
             text-align: center;
         }ul{
             padding: 0;
@@ -76,10 +53,7 @@
             <li><span>diseño barba</span><span>7&#x20AC;</span></li>
             <li><span>Corte + Lavado</span><span>15&#x20AC;</span></li>
             <li><span>afeitado barba</span><span>10&#x20AC;</span></li>
-            <li><span>proteína</span><span>30&#x20AC;</span></li>
-        </ul>
-        <h1 style="font-weight: 700; text-transform: uppercase; font-size: 25px; margin: 1.5rem 0;     color: white;
-        border-bottom: 2px solid #F2BE5C;
+            <bottom: 2px solid #F2BE5C;
         border-radius: 10px;">Contacta con nosotros</h1>
         <button class="m-3"><i class="bi bi-instagram" style="padding-right:15px; font-size: 20px;"></i><span>the_bk_barber</span></button>
         <button class="mb-3"><i class="bi bi-whatsapp" style="padding-right:15px; font-size: 20px;"></i><span>+34 642 774 780</span></button>
@@ -97,14 +71,7 @@
     <script>
 
     var map = L.map('map').setView([34.235038, -3.981148], 16);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 19,
-                attribution: '&copy; <a href=\"http://www.openstreetmap.org/copyright\" >Barber King Shop</a>'
-            }).addTo(map);
-            var googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
-                maxZoom: 20,
-                subdomains:['mt0','mt1','mt2','mt3'],
-                scrollWheelZoom: false
+    L.tileLayer('hZoom: false
             });
 
             googleStreets.addTo(map);
